@@ -1,0 +1,28 @@
+# Copyright 2019 Peter Williams <peter@newton.cx>
+# Licensed under the MIT License.
+
+[package]
+name = "tokio-pty-process"
+version = "0.4.0" # also update html_root_url in src/lib.rs
+authors = ["Alex Crichton <alex@alexcrichton.com>", "Peter Williams <peter@newton.cx>"]
+description = "Interact with a child process through a pseudo-TTY, asynchronously using Tokio"
+homepage = "https://github.com/pkgw/stund/tree/master/tokio-pty-process"
+documentation = "https://docs.rs/crate/tokio-pty-process"
+repository = "https://github.com/pkgw/stund/"
+readme = "README.md"
+keywords = ["pseudotty", "tokio"]
+categories = ["asynchronous", "os::unix-apis"]
+license = "MIT/Apache-2.0"
+edition = "2018"
+
+[dependencies]
+bytes = "0.4.11"
+futures = "0.1"
+libc = "0.2"
+mio = "0.6"
+tokio = "0.1.22"
+tokio-io = "0.1.13"
+tokio-signal = "0.2.1"
+
+[dev-dependencies]
+errno = "0.2"
